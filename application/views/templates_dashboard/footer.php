@@ -35,7 +35,7 @@
             <div class="modal-body">Pilih "Keluar" Jika Anda Siap Mengakhiri Sesi ini.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                <a class="btn btn-primary" href="<?= base_url('auth/logout') ?>">Keluar</a>
+                <a class="btn btn-info" href="<?= base_url('auth/logout') ?>">Keluar</a>
             </div>
         </div>
     </div>
