@@ -5,7 +5,7 @@
     <ul class="navbar-nav sidebar bg-gradient-info sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex flex-column align-items-center justify-content-center mb-4" href="<?= base_url('kabag/akun') ?>">
+        <a class="sidebar-brand d-flex flex-column align-items-center justify-content-center mb-4" href="<?= base_url('kabag') ?>">
             <div class="sidebar-brand-icon mt-3">
                 <i class="fas fa-user"></i>
             </div>

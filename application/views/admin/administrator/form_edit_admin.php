@@ -15,7 +15,7 @@
              <form action="<?= base_url('admin/administrator/edit_admin/' . $admin['id']);  ?>" method="post">
                  <div class="form-group">
                      <label for="nik">NIK</label>
-                     <input type="text" class="form-control" id="nik" name="nik" value="<?= $admin['nik'] ?>">
+                     <input disabled type="text" class="form-control" id="nik" name="nik" value="<?= $admin['nik'] ?>">
                      <?= form_error('nik', "<div class='text-danger text-small'> ", "</div>"); ?>
                  </div>
 

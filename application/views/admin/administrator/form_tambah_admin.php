@@ -16,6 +16,11 @@
 
 
                  <div class="form-group">
+                     <label for="nik">NIK</label>
+                     <input type="text" class="form-control" id="nik" name="nik">
+                     <?= form_error('nik', "<div class='text-danger text-small'> ", "</div>"); ?>
+                 </div>
+                 <div class="form-group">
                      <label for="nama">Nama</label>
                      <input type="text" class="form-control" id="nama" name="nama">
                      <?= form_error('nama', "<div class='text-danger text-small'> ", "</div>"); ?>
