@@ -4,7 +4,7 @@
      <!-- Page Heading -->
      <h1 class="h3 mb-4 text-gray-800">Admin</h1>
      <?= $this->session->flashdata('pesan') ?>
-     <a href="<?= base_url('admin/akun/tambah_admin') ?>" class="btn btn-info mb-3"> <i class='fas fa-plus-circle'></i> Tambah Admin</a>
+     <a href="<?= base_url('admin/administrator/tambah_admin') ?>" class="btn btn-info mb-3"> <i class='fas fa-plus-circle'></i> Tambah Admin</a>
 
      <table class="table table-sm table-hover table-bordered table-striped mt-2 datatables">
          <thead>
@@ -35,8 +35,8 @@
                      <td style="width:50px;">
                          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                              <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                 <a data-toggle="tooltip" title="Ubah" data-placement="bottom" href="<?= base_url('admin/akun/edit_admin/' . $adm['id']) ?>" class="btn btn-success"><i class="fas fa-edit"></i></a>
-                                 <a data-toggle="tooltip" title="Hapus" data-placement="bottom" href="<?= base_url('admin/akun/hapus_admin/' . $adm['id']) ?>" class="btn btn-danger" onclick="return confirm ('Yakin Hapus?')"><i class="fas fa-trash-alt"></i></a>
+                                 <a data-toggle="tooltip" title="Ubah" data-placement="bottom" href="<?= base_url('admin/administrator/edit_admin/' . $adm['id']) ?>" class="btn btn-success"><i class="fas fa-edit"></i></a>
+                                 <a data-toggle="tooltip" title="Hapus" data-placement="bottom" href="<?= base_url('admin/administrator/hapus_admin/' . $adm['id']) ?>" class="btn btn-danger" onclick="return confirm ('Yakin Hapus?')"><i class="fas fa-trash-alt"></i></a>
                              </div>
                          </div>
                      </td>

@@ -12,7 +12,7 @@
 
      <div class="row">
          <div class="col-lg-6">
-             <form action="<?= base_url('admin/akun/tambah_admin');  ?>" method="post">
+             <form action="<?= base_url('admin/administrator/tambah_admin');  ?>" method="post">
 
 
                  <div class="form-group">

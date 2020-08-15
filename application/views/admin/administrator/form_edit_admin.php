@@ -12,7 +12,7 @@
 
      <div class="row">
          <div class="col-lg-6">
-             <form action="<?= base_url('admin/akun/edit_admin/' . $admin['id']);  ?>" method="post">
+             <form action="<?= base_url('admin/administrator/edit_admin/' . $admin['id']);  ?>" method="post">
                  <div class="form-group">
                      <label for="nik">NIK</label>
                      <input type="text" class="form-control" id="nik" name="nik" value="<?= $admin['nik'] ?>">

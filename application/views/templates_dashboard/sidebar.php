@@ -46,7 +46,7 @@
             Master
         </div>
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('admin/akun/data_admin') ?>">
+            <a class="nav-link" href="<?php echo base_url('admin/administrator') ?>">
                 <i class="fas fa-fw fa-user"></i>
                 <span>Admin</span></a>
 

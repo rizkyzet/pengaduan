@@ -59,12 +59,16 @@ class Akun extends CI_Controller
                 $this->load->library('upload', $config);
 
                 if ($this->upload->do_upload('gambar')) {
-                    // $foto_lama = $data['user']['gambar'];
-                    // if ($foto_lama != 'default.png') {
-                    //     unlink(FCPATH . 'assets/img/foto_profil/' . $foto_lama);
-                    // }
-
+                    $foto_lama = $data['user']['gambar'];
                     $foto_baru = $this->upload->data('file_name');
+                    if ($foto_lama != 'default.png') {
+                        if ($foto_lama != $foto_baru) {
+
+                            array_map('unlink', glob(FCPATH . "assets/img/foto_profil/$foto_lama"));
+                        }
+                    }
+
+
                     $set = array_merge($set, ['gambar' => $foto_baru]);
                 } elseif ($this->upload->display_errors()) {
                     $this->session->set_flashdata('pesan_upload', '<div class="alert alert-danger" role="alert"><h4 class="alert-heading">Upload failed!</h4><p>' . $this->upload->display_errors() . '</p></div>');
