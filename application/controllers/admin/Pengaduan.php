@@ -36,7 +36,11 @@ class Pengaduan extends CI_Controller
     {
         $data['kode'] = "KS-" . date('Ymd') . "-" . time();
         $this->form_validation->set_rules('judul', 'Judul pengaduan', 'required');
+        $this->form_validation->set_rules('pertanyaan[]', 'Pertanyaan', 'required');
+
+
         if ($this->form_validation->run() == false) {
+            $data['jumlah_pertanyaan'] = set_value('jumlah_pertanyaan');
             $this->load->view('templates_dashboard/header', $data);
             $this->load->view('templates_dashboard/sidebar');
             $this->load->view('templates_dashboard/topbar');

@@ -68,11 +68,12 @@ $('.image').on('change', function () {
 // })
 
 $(document).ready(function () {
-    var i = 1;
+    var i = $('input[name="jumlah_pertanyaan"]').val();
+    console.log(i);
     $(document).on('click', '#btn_tambah', function () {
         i++;
-
-        $('.pertanyaan').append(' <div class="row justify-content-center" id="row_' + i + '"><div class="col-6 shadow"><div class="form-group d-flex flex-row mt-3"><input required type="text" name="pertanyaan[]" id="' + i + '" class="form-control" placeholder="isi pertanyaan"><button id="' + i + '" type="button" class="btn btn-sm btn-danger btn_hapus"><i class="fas fa-times"></i></button></div></div></div>')
+        $('input[name="jumlah_pertanyaan"]').val(i);
+        $('.pertanyaan').append(' <div class="row justify-content-center" id="row_' + i + '"><div class="col-6 shadow"><div class="form-group d-flex flex-row mt-3"><input  type="text" name="pertanyaan[]" id="' + i + '" class="form-control" placeholder="isi pertanyaan"><button id="' + i + '" type="button" class="btn btn-sm btn-danger btn_hapus"><i class="fas fa-times"></i></button></div></div></div>')
     })
 
 })
